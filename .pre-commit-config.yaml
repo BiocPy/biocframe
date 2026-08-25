@@ -33,10 +33,12 @@ repos:
 
 - repo: https://github.com/astral-sh/ruff-pre-commit
   # Ruff version.
-  rev: v0.15.6
+  rev: v0.16.2
   hooks:
-    - id: ruff
-      args: [--fix, --exit-non-zero-on-fix]
+    # Run the linter.
+    - id: ruff-check
+      args: [--fix, --exit-zero]
+    # Run the formatter.
     - id: ruff-format
 
 ## If like to embrace black styles even in the docs:
