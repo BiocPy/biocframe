@@ -1,0 +1,5 @@
+# only for GitHub's dependency graph
+biocutils>=0.3.3
+numpy
+pandas
+polars
