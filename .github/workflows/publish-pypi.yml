@@ -33,7 +33,7 @@ jobs:
 
       - name: Build Project
         run: |
-          tox -e build
+          tox -e clean,build
 
       # This uses the trusted publisher workflow so no token is required.
       - name: Publish to PyPI

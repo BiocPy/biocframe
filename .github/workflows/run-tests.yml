@@ -47,7 +47,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install uv tox
-          uv sync
+          uv sync --python ${{ matrix.python }}
 
       - name: Run tests
         run: |

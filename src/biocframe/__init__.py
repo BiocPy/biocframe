@@ -15,5 +15,5 @@ except PackageNotFoundError:  # pragma: no cover
 finally:
     del version, PackageNotFoundError
 
-from .BiocFrame import BiocFrame, merge, relaxed_combine_columns, relaxed_combine_rows
-from .io import from_pandas
+from .BiocFrame import BiocFrame as BiocFrame, merge as merge, relaxed_combine_columns as relaxed_combine_columns, relaxed_combine_rows as relaxed_combine_rows
+from .io import from_pandas as from_pandas

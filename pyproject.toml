@@ -6,24 +6,48 @@ readme = "README.md"
 authors = [
     { name = "Jayaram Kancherla", email = "jayaram.kancherla@gmail.com" }
 ]
-requires-python = ">=3.12"
+requires-python = ">=3.9"
+license = { file = "LICENSE.txt" }
+keywords = ["biocpy", "bioinformatics", "dataframe", "bioconductor"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Typing :: Typed",
+]
 dependencies = [
     "biocutils>=0.3.3",
-    "importlib-metadata>=9.0.0 ; python_full_version < '3.8'",
-    "numpy>=2.5.2",
+    "numpy>=1.26.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/BiocPy/biocframe"
+Documentation = "https://biocpy.github.io/BiocFrame/"
+Source = "https://github.com/BiocPy/biocframe"
+"Bug Tracker" = "https://github.com/BiocPy/biocframe/issues"
 
 [project.optional-dependencies]
 optional = [
-    "pandas>=3.0.5",
-    "polars>=1.44.0",
+    "pandas>=2.0.0",
+    "polars>=0.20.0",
 ]
 testing = [
-    "pandas>=3.0.5",
-    "polars>=1.44.0",
-    "pytest>=9.1.1",
-    "pytest-cov>=7.1.0",
-    "setuptools>=84.0.0",
+    "pandas>=2.0.0",
+    "polars>=0.20.0",
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "setuptools>=68.0.0",
 ]
 
 [build-system]
@@ -61,12 +85,13 @@ testpaths = ["tests"]
 
 [dependency-groups]
 dev = [
-    "furo>=2025.12.19",
-    "linkify-it-py>=2.1.1",
-    "mypy>=2.3.1",
-    "myst-nb>=1.4.0",
-    "pytest>=9.1.1",
-    "pytest-cov>=7.1.0",
-    "sphinx>=9.1.0",
-    "sphinx-autodoc-typehints>=3.13.4",
+    "furo>=2024.0.0",
+    "linkify-it-py>=1.0.3",
+    "mypy>=1.0.0",
+    "myst-nb>=1.0.0",
+    "pandas-stubs>=2.0.0",
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "sphinx>=7.0.0",
+    "sphinx-autodoc-typehints>=2.0.0",
 ]
