@@ -1,9 +1,9 @@
 from __future__ import annotations
 
+import builtins
 from collections import OrderedDict, abc
 from collections.abc import Sequence
 from copy import copy
-import builtins
 from typing import TYPE_CHECKING, Any, Literal, cast
 from warnings import warn
 
