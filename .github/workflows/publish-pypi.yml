@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Set up uv
         uses: astral-sh/setup-uv@v5
         with:
@@ -41,7 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Set up uv
         uses: astral-sh/setup-uv@v5
         with:
@@ -81,7 +81,7 @@ jobs:
         with:
           name: python-package-distributions
           path: dist/
-          
+
       - name: Publish package to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
 
