@@ -2,7 +2,7 @@
 
 ## Version 0.8.0
 
-- Package migrated to hatch+uv using the `hatchit` package. 
+- Package migrated to hatch+uv using the `hatchit` package.
 
 ## Version 0.7.0 - 0.7.3
 
