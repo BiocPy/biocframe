@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 0.8.0
+
+- Package migrated to hatch+uv using the `hatchit` package. 
+
 ## Version 0.7.0 - 0.7.3
 
 - Major update to type hints throughout the module for better type safety and consistency.
