@@ -36,7 +36,7 @@ jobs:
     runs-on: ${{ matrix.platform }}
     name: Python ${{ matrix.python }}, ${{ matrix.platform }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Set up uv
         uses: astral-sh/setup-uv@v5
