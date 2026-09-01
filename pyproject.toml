@@ -106,3 +106,7 @@ addopts = "--cov --cov-report term-missing"
 testpaths = [
     "tests",
 ]
+
+[tool.bandit]
+exclude_dirs = ["tests"]
+skips = ["B110"]
