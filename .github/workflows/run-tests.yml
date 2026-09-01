@@ -44,11 +44,12 @@ jobs:
           python-version: ${{ matrix.python }}
 
       - name: Install tox
-        run: python -m pip install tox
+        run: python -m pip install tox coverage
 
       - name: Run tests
         run: |
-          tox -e default -- --cov --cov-branch --cov-report=xml
+          tox \
+          -- -rFEx --durations 10 --color yes --cov --cov-branch --cov-report=xml  # pytest args
 
       - name: Check for codecov token availability
         id: codecov-check
