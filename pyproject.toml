@@ -106,15 +106,3 @@ addopts = "--cov --cov-report term-missing"
 testpaths = [
     "tests",
 ]
-
-[dependency-groups]
-dev = [
-    "pytest",
-    "pytest-cov",
-    "sphinx",
-    "myst-nb",
-    "furo",
-    "sphinx-autodoc-typehints",
-    "linkify-it-py",
-    "mypy",
-]

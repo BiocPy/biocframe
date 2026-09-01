@@ -1,6 +1,6 @@
 # Changelog
 
-## Version 0.8.0
+## Version 0.8.0 - 0.8.1
 
 - Package migrated to hatch+uv using the `hatchit` package.
 
